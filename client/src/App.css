@@ -31,3 +31,36 @@
     transform: rotate(360deg);
   }
 }
+.dark-mode__toggle {
+  background: #fff;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 50px;
+  margin: 20px;
+  padding: 5px;
+}
+
+.toggle {
+  background: #000;
+  border-radius: 50px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 36px;
+}
+body.dark-mode {
+  background-color: #353535;
+}
+body.dark-mode main > h1 {
+  color: #fff;
+}
+body.dark-mode main > div {
+  background-color: #fff;
+  color: #000;
+}
